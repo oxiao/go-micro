@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/markbates/pkger v0.17.1
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -23,4 +23,4 @@ require (
 	google.golang.org/protobuf v1.26.0 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

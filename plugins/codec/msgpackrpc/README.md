@@ -8,7 +8,7 @@ package main
 
 import (
     "github.com/asim/go-micro/plugins/codec/msgpackrpc"
-    "go-micro.dev/v4"
+    "github.com/asim/go-micro"
     "github.com/micro/go-micro/client"
     "github.com/micro/go-micro/server"
 )

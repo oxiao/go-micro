@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/BurntSushi/toml v0.3.1
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

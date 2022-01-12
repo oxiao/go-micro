@@ -9,8 +9,8 @@ import (
 
 	pb "{{.Vendor}}{{lower .Service}}/proto"
 
-	"go-micro.dev/v4"
-	log "go-micro.dev/v4/logger"
+	"github.com/asim/go-micro"
+	log "github.com/asim/go-micro/logger"
 )
 
 var (
@@ -47,10 +47,10 @@ import (
 	"{{.Vendor}}{{.Service}}/handler"
 
 {{if .Jaeger}}	ot "github.com/asim/go-micro/plugins/wrapper/trace/opentracing/v4"
-{{end}}	"go-micro.dev/v4"
-	log "go-micro.dev/v4/logger"{{if .Jaeger}}
+{{end}}	"github.com/asim/go-micro"
+	log "github.com/asim/go-micro/logger"{{if .Jaeger}}
 
-	"go-micro.dev/v4/cmd/micro/debug/trace/jaeger"{{end}}
+	"github.com/asim/go-micro/cmd/micro/debug/trace/jaeger"{{end}}
 )
 
 var (
@@ -99,10 +99,10 @@ import (
 	pb "{{.Vendor}}{{.Service}}/proto"
 
 {{if .Jaeger}}	ot "github.com/asim/go-micro/plugins/wrapper/trace/opentracing/v4"
-{{end}}	"go-micro.dev/v4"
-	log "go-micro.dev/v4/logger"{{if .Jaeger}}
+{{end}}	"github.com/asim/go-micro"
+	log "github.com/asim/go-micro/logger"{{if .Jaeger}}
 
-	"go-micro.dev/v4/cmd/micro/debug/trace/jaeger"{{end}}
+	"github.com/asim/go-micro/cmd/micro/debug/trace/jaeger"{{end}}
 )
 
 var (

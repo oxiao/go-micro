@@ -52,7 +52,7 @@ Create your service and ensure you call `service.Init`
 package main
 
 import (
-	"go-micro.dev/v4"
+	"github.com/asim/go-micro"
 )
 
 func main() {
@@ -97,7 +97,7 @@ Import and set as options when creating a new service
 
 ```go
 import (
-	"go-micro.dev/v4"
+	"github.com/asim/go-micro"
 	"github.com/asim/go-micro/plugins/registry/kubernetes/v4"
 )
 

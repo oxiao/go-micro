@@ -6,8 +6,8 @@ import (
 	"net"
 	"strconv"
 
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/selector"
 )
 
 type dnsSelector struct {

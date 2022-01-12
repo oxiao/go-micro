@@ -25,7 +25,7 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.7.7
 	github.com/pkg/errors v0.9.1
-	go-micro.dev/v4 v4.4.0
+	github.com/asim/go-micro v4.4.0
 	golang.org/x/net v0.0.0-20210614182718-04defd469f4e
 )
 

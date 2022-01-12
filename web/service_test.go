@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/registry"
 )
 
 func TestService(t *testing.T) {

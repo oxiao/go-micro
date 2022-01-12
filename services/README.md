@@ -78,7 +78,7 @@ import (
 	"fmt"
 	"os"
 
-	"go-micro.dev/v4/services/currency"
+	"github.com/asim/go-micro/services/currency"
 )
 
 var (

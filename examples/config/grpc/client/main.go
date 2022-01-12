@@ -2,8 +2,8 @@ package main
 
 import (
 	grpcConfig "github.com/asim/go-micro/plugins/config/source/grpc/v4"
-	"go-micro.dev/v4/config"
-	log "go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/config"
+	log "github.com/asim/go-micro/logger"
 )
 
 type Micro struct {

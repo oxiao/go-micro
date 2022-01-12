@@ -6,7 +6,7 @@ var HandlerFNC = `package handler
 import (
 	"context"
 
-	log "go-micro.dev/v4/logger"
+	log "github.com/asim/go-micro/logger"
 
 	pb "{{.Vendor}}{{.Service}}/proto"
 )
@@ -28,7 +28,7 @@ import (
 	"io"
 	"time"
 
-	log "go-micro.dev/v4/logger"
+	log "github.com/asim/go-micro/logger"
 
 	pb "{{.Vendor}}{{.Service}}/proto"
 )

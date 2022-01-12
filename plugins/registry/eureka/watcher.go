@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/hudl/fargo"
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/registry"
 )
 
 type eurekaWatcher struct {

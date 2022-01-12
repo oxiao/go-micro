@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"go-micro.dev/v4/auth"
+	"github.com/asim/go-micro/auth"
 )
 
 var (

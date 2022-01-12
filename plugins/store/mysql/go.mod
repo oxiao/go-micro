@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/pkg/errors v0.9.1
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -23,4 +23,4 @@ require (
 	google.golang.org/protobuf v1.26.0 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

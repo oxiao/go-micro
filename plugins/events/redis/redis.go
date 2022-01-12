@@ -12,8 +12,8 @@ import (
 
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
-	"go-micro.dev/v4/events"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/events"
+	"github.com/asim/go-micro/logger"
 	"github.com/pkg/errors"
 )
 

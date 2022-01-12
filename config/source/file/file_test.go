@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"go-micro.dev/v4/config"
-	"go-micro.dev/v4/config/source/file"
+	"github.com/asim/go-micro/config"
+	"github.com/asim/go-micro/config/source/file"
 )
 
 func TestConfig(t *testing.T) {

@@ -3,8 +3,8 @@ package server
 import (
 	"net/http"
 
-	"go-micro.dev/v4/codec"
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/codec"
+	"github.com/asim/go-micro/transport"
 )
 
 type rpcResponse struct {

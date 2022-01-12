@@ -8,7 +8,7 @@ import (
 	"time"
 
 	cache "github.com/patrickmn/go-cache"
-	"go-micro.dev/v4/metadata"
+	"github.com/asim/go-micro/metadata"
 )
 
 // NewCache returns an initialised cache.

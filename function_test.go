@@ -5,9 +5,9 @@ import (
 	"sync"
 	"testing"
 
-	proto "go-micro.dev/v4/debug/proto"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/util/test"
+	proto "github.com/asim/go-micro/debug/proto"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/util/test"
 )
 
 func TestFunction(t *testing.T) {

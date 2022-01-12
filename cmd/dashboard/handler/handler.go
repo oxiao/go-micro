@@ -9,7 +9,7 @@ import (
 	"github.com/asim/go-micro/cmd/dashboard/v4/handler/statistics"
 	"github.com/asim/go-micro/cmd/dashboard/v4/web"
 	"github.com/gin-gonic/gin"
-	"go-micro.dev/v4/client"
+	"github.com/asim/go-micro/client"
 )
 
 type Options struct {

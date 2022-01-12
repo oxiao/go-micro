@@ -1,7 +1,7 @@
 package bytes
 
 import (
-	"go-micro.dev/v4/codec"
+	"github.com/asim/go-micro/codec"
 )
 
 type Marshaler struct{}

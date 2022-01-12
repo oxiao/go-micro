@@ -14,9 +14,9 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/cmd"
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/cmd"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/registry"
 	hash "github.com/mitchellh/hashstructure"
 	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
 	"go.etcd.io/etcd/client/v3"

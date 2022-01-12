@@ -3,7 +3,7 @@ package sync
 import (
 	"time"
 
-	"go-micro.dev/v4/store"
+	"github.com/asim/go-micro/store"
 )
 
 // Options represents Sync options

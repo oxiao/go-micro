@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"time"
 	
-	"go-micro.dev/v4/cmd"
-	"go-micro.dev/v4/registry"
-	"github.com/nacos-group/nacos-sdk-go/v2/clients"
-	"github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client"
-	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
-	"github.com/nacos-group/nacos-sdk-go/v2/vo"
+	"github.com/asim/go-micro/cmd"
+	"github.com/asim/go-micro/registry"
+	"github.com/nacos-group/nacos-sdk-go/clients"
+	"github.com/nacos-group/nacos-sdk-go/clients/naming_client"
+	"github.com/nacos-group/nacos-sdk-go/common/constant"
+	"github.com/nacos-group/nacos-sdk-go/vo"
 )
 
 type nacosRegistry struct {
@@ -45,16 +45,22 @@ func configure(n *nacosRegistry, opts ...registry.Option) error {
 	serverConfigs := make([]constant.ServerConfig, 0)
 	contextPath := "/nacos"
 
-	cfg, ok := n.opts.Context.Value(configKey{}).(constant.ClientConfig)
-	if ok {
-		clientConfig = cfg
-	}
-	addrs, ok := n.opts.Context.Value(addressKey{}).([]string)
-	if !ok {
-		addrs = []string{"127.0.0.1:8848"}
+	if n.opts.Context != nil {
+		cfg, ok := n.opts.Context.Value(configKey{}).(constant.ClientConfig)
+		if ok {
+			clientConfig = cfg
+		}
+		addrs, ok := n.opts.Context.Value(addressKey{}).([]string)
+		if ok {
+			n.opts.Addrs = addrs
+		}
 	}
 
-	for _, addr := range addrs {
+	if len(n.opts.Addrs) == 0 {
+		n.opts.Addrs = []string{"127.0.0.1:8848"}
+	}
+
+	for _, addr := range n.opts.Addrs {
 		// check we have a port
 		host, port, err := net.SplitHostPort(addr)
 		if err != nil {

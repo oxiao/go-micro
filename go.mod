@@ -1,4 +1,4 @@
-module go-micro.dev/v4
+module github.com/asim/go-micro
 
 go 1.17
 

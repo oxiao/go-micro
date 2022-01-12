@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	micro "go-micro.dev/v4"
-	broker "go-micro.dev/v4/broker"
-	server "go-micro.dev/v4/server"
+	micro "github.com/asim/go-micro"
+	broker "github.com/asim/go-micro/broker"
+	server "github.com/asim/go-micro/server"
 	rabbitmq "github.com/asim/go-micro/plugins/broker/rabbitmq/v4"
 )
 

@@ -1,6 +1,6 @@
 # Log
 
-DEPRECATED: use go-micro.dev/v4/logger interface
+DEPRECATED: use github.com/asim/go-micro/logger interface
 
 This is the global logger for all micro based libraries.
 

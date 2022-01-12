@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/asim/go-awsxray v0.0.0-20161209120537-0d8a60b6e205
 	github.com/aws/aws-sdk-go v1.38.69
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -25,4 +25,4 @@ require (
 	google.golang.org/protobuf v1.26.0 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

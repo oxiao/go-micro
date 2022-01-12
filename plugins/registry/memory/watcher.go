@@ -3,7 +3,7 @@ package memory
 import (
 	"errors"
 
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/registry"
 )
 
 type Watcher struct {

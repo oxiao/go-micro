@@ -5,9 +5,9 @@ import (
 	"log"
 
 	hello "github.com/asim/go-micro/examples/v4/greeter/srv/proto/hello"
-	"go-micro.dev/v4"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/registry"
 )
 
 func main() {

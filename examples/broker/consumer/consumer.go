@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/cmd"
+	"github.com/asim/go-micro/broker"
+	"github.com/asim/go-micro/cmd"
 	// To enable rabbitmq plugin uncomment
 	//_ "github.com/micro/go-plugins/broker/rabbitmq"
 )

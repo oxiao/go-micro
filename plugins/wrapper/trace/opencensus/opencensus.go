@@ -6,10 +6,10 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"go-micro.dev/v4/client"
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/metadata"
-	"go-micro.dev/v4/server"
+	"github.com/asim/go-micro/client"
+	log "github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/metadata"
+	"github.com/asim/go-micro/server"
 	"go.opencensus.io/trace"
 	"go.opencensus.io/trace/propagation"
 )

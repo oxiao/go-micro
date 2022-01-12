@@ -9,12 +9,12 @@ import (
 	"net"
 	"time"
 
-	"go-micro.dev/v4/cmd"
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/transport"
-	maddr "go-micro.dev/v4/util/addr"
-	mnet "go-micro.dev/v4/util/net"
-	mls "go-micro.dev/v4/util/tls"
+	"github.com/asim/go-micro/cmd"
+	log "github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/transport"
+	maddr "github.com/asim/go-micro/util/addr"
+	mnet "github.com/asim/go-micro/util/net"
+	mls "github.com/asim/go-micro/util/tls"
 )
 
 type tcpTransport struct {

@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/nacos-group/nacos-sdk-go/v2 v2.0.0-Beta.1
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -67,4 +67,4 @@ require (
 	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

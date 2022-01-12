@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"go-micro.dev/v4/config/source"
+	"github.com/asim/go-micro/config/source"
 	"gocloud.dev/runtimevar"
 )
 

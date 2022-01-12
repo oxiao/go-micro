@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/kr/pretty v0.2.1
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 	go.etcd.io/bbolt v1.3.6
 )
 
@@ -26,4 +26,4 @@ require (
 	google.golang.org/protobuf v1.26.0 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

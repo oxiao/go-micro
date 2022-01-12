@@ -5,8 +5,8 @@ import (
 	"github.com/asim/go-micro/cmd/dashboard/v4/handler"
 	mhttp "github.com/asim/go-micro/plugins/server/http/v4"
 	"github.com/gin-gonic/gin"
-	"go-micro.dev/v4"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro"
+	"github.com/asim/go-micro/logger"
 )
 
 func main() {

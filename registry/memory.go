@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/logger"
 )
 
 var (

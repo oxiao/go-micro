@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"go-micro.dev/v4/util/ring"
+	"github.com/asim/go-micro/util/ring"
 )
 
 type memTracer struct {

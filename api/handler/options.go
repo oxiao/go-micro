@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"go-micro.dev/v4/api/router"
-	"go-micro.dev/v4/client"
+	"github.com/asim/go-micro/api/router"
+	"github.com/asim/go-micro/client"
 )
 
 var (

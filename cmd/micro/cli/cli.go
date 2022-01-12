@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli/v2"
-	mcmd "go-micro.dev/v4/cmd"
+	mcmd "github.com/asim/go-micro/cmd"
 )
 
 var (
@@ -19,7 +19,7 @@ var (
 
 // CLI is the interface that wraps the cli app.
 //
-// CLI embeds the Cmd interface from the go-micro.dev/v4/cmd
+// CLI embeds the Cmd interface from the github.com/asim/go-micro/cmd
 // package and adds a Run method.
 //
 // Run runs the cli app within this command and exits on error.

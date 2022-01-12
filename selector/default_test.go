@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/registry"
 )
 
 func TestRegistrySelector(t *testing.T) {

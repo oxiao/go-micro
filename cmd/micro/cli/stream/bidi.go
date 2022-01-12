@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/urfave/cli/v2"
-	"go-micro.dev/v4"
-	"go-micro.dev/v4/client"
+	"github.com/asim/go-micro"
+	"github.com/asim/go-micro/client"
 )
 
 // Bidirectional streams client requests and prints the server stream responses

@@ -9,7 +9,7 @@ Micro CLI is the command line interface for developing [Go Micro][1] projects.
 Installation is done by using the [`go install`][3] command.
 
 ```bash
-go install go-micro.dev/v4/cmd/micro@master
+go install github.com/asim/go-micro/cmd/micro@master
 ```
 
 Let's create a new service using the `new` command.
@@ -48,7 +48,7 @@ You will need protoc-gen-micro for code generation
 # https://github.com/protocolbuffers/protobuf/releases
 go get -u google.golang.org/protobuf/proto
 go install github.com/golang/protobuf/protoc-gen-go@latest
-go install go-micro.dev/v4/cmd/protoc-gen-micro@latest
+go install github.com/asim/go-micro/cmd/protoc-gen-micro@latest
 ```
 
 ## Creating A Service
@@ -119,7 +119,7 @@ package helloworld
 import (
     "context"
 
-    log "go-micro.dev/v4/logger"
+    log "github.com/asim/go-micro/logger"
 
     "helloworld/greeter"
     pb "helloworld/proto"
@@ -143,7 +143,7 @@ import (
     "context"
     "fmt"
 
-    "go-micro.dev/v4/cmd/micro/debug/trace"
+    "github.com/asim/go-micro/cmd/micro/debug/trace"
 )
 
 func Greet(ctx context.Context, name string) string {

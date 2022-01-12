@@ -6,7 +6,7 @@ import (
 
 	proto "github.com/asim/go-micro/examples/v4/helloworld/proto"
 	"github.com/asim/go-micro/examples/v4/mocking/mock"
-	"go-micro.dev/v4"
+	"github.com/asim/go-micro"
 	"github.com/urfave/cli/v2"
 )
 

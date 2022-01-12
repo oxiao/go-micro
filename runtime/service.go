@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/runtime/local/build"
-	"go-micro.dev/v4/runtime/local/process"
-	proc "go-micro.dev/v4/runtime/local/process/os"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/runtime/local/build"
+	"github.com/asim/go-micro/runtime/local/process"
+	proc "github.com/asim/go-micro/runtime/local/process/os"
 )
 
 type service struct {

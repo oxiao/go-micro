@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/urfave/cli/v2"
-	mcli "go-micro.dev/v4/cmd/micro/cli"
-	"go-micro.dev/v4/cmd/micro/generator"
-	tmpl "go-micro.dev/v4/cmd/micro/generator/template"
+	mcli "github.com/asim/go-micro/cmd/micro/cli"
+	"github.com/asim/go-micro/cmd/micro/generator"
+	tmpl "github.com/asim/go-micro/cmd/micro/generator/template"
 )
 
 func init() {

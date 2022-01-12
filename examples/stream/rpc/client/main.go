@@ -8,7 +8,7 @@ import (
 	"context"
 
 	proto "github.com/asim/go-micro/examples/v4/stream/rpc/server/proto"
-	"go-micro.dev/v4"
+	"github.com/asim/go-micro"
 )
 
 func bidirectional(cl proto.StreamerService) {

@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/hashicorp/consul/api v1.9.0
 	github.com/hashicorp/go-hclog v0.16.2
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -26,4 +26,4 @@ require (
 	golang.org/x/sys v0.0.0-20210502180810-71e4cd670f79 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

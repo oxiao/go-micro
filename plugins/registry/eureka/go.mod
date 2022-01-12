@@ -9,7 +9,7 @@ require (
 	github.com/franela/goreq v0.0.0-20171204163338-bcd34c9993f8 // indirect
 	github.com/hudl/fargo v1.3.0
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
 	gopkg.in/gcfg.v1 v1.2.3 // indirect
 )
@@ -57,4 +57,4 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

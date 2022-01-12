@@ -3,7 +3,7 @@ package token
 import (
 	"time"
 
-	"go-micro.dev/v4/store"
+	"github.com/asim/go-micro/store"
 )
 
 type Options struct {

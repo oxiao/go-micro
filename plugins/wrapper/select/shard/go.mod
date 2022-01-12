@@ -2,7 +2,7 @@ module github.com/asim/go-micro/plugins/wrapper/select/shard/v4
 
 go 1.17
 
-require go-micro.dev/v4 v4.2.1
+require github.com/asim/go-micro v4.2.1
 
 require (
 	github.com/golang/protobuf v1.5.2 // indirect
@@ -19,4 +19,4 @@ require (
 	google.golang.org/protobuf v1.26.0 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

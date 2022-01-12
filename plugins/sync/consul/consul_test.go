@@ -6,7 +6,7 @@ import (
 	gosync "sync"
 	"testing"
 
-	"go-micro.dev/v4/sync"
+	"github.com/asim/go-micro/sync"
 )
 
 const (

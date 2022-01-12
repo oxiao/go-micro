@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"go-micro.dev/v4/broker"
+	"github.com/asim/go-micro/broker"
 	stan "github.com/nats-io/stan.go"
 )
 

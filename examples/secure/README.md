@@ -20,8 +20,8 @@ Create a tls.go file
 package main
 
 import (
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/transport"
 )
 
 func init() {

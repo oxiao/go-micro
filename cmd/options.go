@@ -3,19 +3,19 @@ package cmd
 import (
 	"context"
 
-	"go-micro.dev/v4/auth"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/cache"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/config"
-	"go-micro.dev/v4/debug/profile"
-	"go-micro.dev/v4/debug/trace"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/runtime"
-	"go-micro.dev/v4/selector"
-	"go-micro.dev/v4/server"
-	"go-micro.dev/v4/store"
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/auth"
+	"github.com/asim/go-micro/broker"
+	"github.com/asim/go-micro/cache"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/config"
+	"github.com/asim/go-micro/debug/profile"
+	"github.com/asim/go-micro/debug/trace"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/runtime"
+	"github.com/asim/go-micro/selector"
+	"github.com/asim/go-micro/server"
+	"github.com/asim/go-micro/store"
+	"github.com/asim/go-micro/transport"
 )
 
 type Options struct {

@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/config/loader"
-	"go-micro.dev/v4/config/reader"
-	"go-micro.dev/v4/config/reader/json"
-	"go-micro.dev/v4/config/source"
+	"github.com/asim/go-micro/config/loader"
+	"github.com/asim/go-micro/config/reader"
+	"github.com/asim/go-micro/config/reader/json"
+	"github.com/asim/go-micro/config/source"
 )
 
 type memory struct {

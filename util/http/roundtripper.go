@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	"go-micro.dev/v4/selector"
+	"github.com/asim/go-micro/selector"
 )
 
 type roundTripper struct {

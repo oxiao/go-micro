@@ -6,7 +6,7 @@ import (
 	"github.com/asim/go-micro/cmd/dashboard/v4/handler/route"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/registry"
 )
 
 type service struct {

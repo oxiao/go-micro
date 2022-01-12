@@ -3,7 +3,7 @@ package util
 import (
 	"runtime/debug"
 
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/logger"
 )
 
 // GoSafe will run func in goroutine safely, avoid crash from unexpected panic

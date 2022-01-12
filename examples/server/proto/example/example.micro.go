@@ -24,8 +24,8 @@ import math "math"
 
 import (
 	context "context"
-	client "go-micro.dev/v4/client"
-	server "go-micro.dev/v4/server"
+	client "github.com/asim/go-micro/client"
+	server "github.com/asim/go-micro/server"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

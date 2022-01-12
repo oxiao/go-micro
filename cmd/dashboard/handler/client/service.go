@@ -12,10 +12,10 @@ import (
 	cmucp "github.com/asim/go-micro/plugins/client/mucp/v4"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/errors"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/errors"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/selector"
 )
 
 type service struct {

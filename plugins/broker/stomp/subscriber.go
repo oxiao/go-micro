@@ -1,7 +1,7 @@
 package stomp
 
 import (
-	"go-micro.dev/v4/broker"
+	"github.com/asim/go-micro/broker"
 	"github.com/go-stomp/stomp/v3"
 )
 

@@ -3,7 +3,7 @@ package memory
 import (
 	"time"
 
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/registry"
 )
 
 func serviceToRecord(s *registry.Service, ttl time.Duration) *record {

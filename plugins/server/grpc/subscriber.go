@@ -7,12 +7,12 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/errors"
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/metadata"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/server"
+	"github.com/asim/go-micro/broker"
+	"github.com/asim/go-micro/errors"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/metadata"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/server"
 )
 
 const (

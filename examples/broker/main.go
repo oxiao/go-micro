@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/cmd"
+	"github.com/asim/go-micro/broker"
+	"github.com/asim/go-micro/cmd"
 )
 
 var (

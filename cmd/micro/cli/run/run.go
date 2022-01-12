@@ -9,9 +9,9 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/urfave/cli/v2"
-	mcli "go-micro.dev/v4/cmd/micro/cli"
-	"go-micro.dev/v4/runtime"
-	"go-micro.dev/v4/runtime/local/git"
+	mcli "github.com/asim/go-micro/cmd/micro/cli"
+	"github.com/asim/go-micro/runtime"
+	"github.com/asim/go-micro/runtime/local/git"
 )
 
 var (

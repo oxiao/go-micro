@@ -7,13 +7,13 @@ import (
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"
-	"go-micro.dev/v4/client"
-	cli "go-micro.dev/v4/client"
-	microerr "go-micro.dev/v4/errors"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
-	"go-micro.dev/v4/server"
-	srv "go-micro.dev/v4/server"
+	"github.com/asim/go-micro/client"
+	cli "github.com/asim/go-micro/client"
+	microerr "github.com/asim/go-micro/errors"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/selector"
+	"github.com/asim/go-micro/server"
+	srv "github.com/asim/go-micro/server"
 )
 
 type Test interface {

@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/hashicorp/consul/api"
-	"go-micro.dev/v4/config/source"
+	"github.com/asim/go-micro/config/source"
 )
 
 type addressKey struct{}

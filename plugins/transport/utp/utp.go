@@ -7,8 +7,8 @@ import (
 	"net"
 	"time"
 
-	"go-micro.dev/v4/cmd"
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/cmd"
+	"github.com/asim/go-micro/transport"
 )
 
 type utpTransport struct {

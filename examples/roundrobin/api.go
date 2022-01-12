@@ -6,10 +6,10 @@ import (
 	"strings"
 
 	hello "github.com/asim/go-micro/examples/v4/greeter/srv/proto/hello"
-	"go-micro.dev/v4"
-	"go-micro.dev/v4/errors"
+	"github.com/asim/go-micro"
+	"github.com/asim/go-micro/errors"
 	roundrobin "github.com/asim/go-micro/plugins/wrapper/select/roundrobin/v4"
-	api "go-micro.dev/v4/api/proto"
+	api "github.com/asim/go-micro/api/proto"
 
 	"context"
 )

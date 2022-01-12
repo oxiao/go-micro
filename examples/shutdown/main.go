@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"context"
-	"go-micro.dev/v4"
+	"github.com/asim/go-micro"
 )
 
 func main() {

@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	yaml "github.com/asim/go-micro/plugins/config/encoder/yaml/v4"
-	"go-micro.dev/v4/config"
-	"go-micro.dev/v4/config/reader"
-	"go-micro.dev/v4/config/reader/json"
-	"go-micro.dev/v4/config/source/file"
+	"github.com/asim/go-micro/config"
+	"github.com/asim/go-micro/config/reader"
+	"github.com/asim/go-micro/config/reader/json"
+	"github.com/asim/go-micro/config/source/file"
 )
 
 func main() {

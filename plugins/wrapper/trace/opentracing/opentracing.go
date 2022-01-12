@@ -7,10 +7,10 @@ import (
 	"context"
 	"strings"
 
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/metadata"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/server"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/metadata"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/server"
 	opentracing "github.com/opentracing/opentracing-go"
 	opentracinglog "github.com/opentracing/opentracing-go/log"
 )

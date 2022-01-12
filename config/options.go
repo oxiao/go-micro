@@ -1,9 +1,9 @@
 package config
 
 import (
-	"go-micro.dev/v4/config/loader"
-	"go-micro.dev/v4/config/reader"
-	"go-micro.dev/v4/config/source"
+	"github.com/asim/go-micro/config/loader"
+	"github.com/asim/go-micro/config/reader"
+	"github.com/asim/go-micro/config/source"
 )
 
 // WithLoader sets the loader for manager config

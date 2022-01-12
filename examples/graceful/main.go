@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"go-micro.dev/v4"
-	"go-micro.dev/v4/server"
+	"github.com/asim/go-micro"
+	"github.com/asim/go-micro/server"
 )
 
 func main() {

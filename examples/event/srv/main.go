@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 
-	"go-micro.dev/v4"
-	proto "go-micro.dev/v4/api/proto"
-	"go-micro.dev/v4/util/log"
+	"github.com/asim/go-micro"
+	proto "github.com/asim/go-micro/api/proto"
+	"github.com/asim/go-micro/util/log"
 )
 
 // All methods of Event will be executed when a message is received

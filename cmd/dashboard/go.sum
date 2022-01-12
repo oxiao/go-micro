@@ -773,10 +773,10 @@ github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
-go-micro.dev/v4 v4.2.1/go.mod h1:XTEJj5ILOBW+2ndGDG56r8fBXZ8hmsVaIaS1K5zwj+s=
-go-micro.dev/v4 v4.3.0/go.mod h1:tw47Xfg2YywfPUnglZgXQsSf7p0ST6mQL3v0JooGmSY=
-go-micro.dev/v4 v4.4.0 h1:DN/WlUwtG0yXs65oevUknlrQXfcBOaeW+WV2tzawZY4=
-go-micro.dev/v4 v4.4.0/go.mod h1:hSBUne6gtYTfYmnNxGQmaNmRQ6z8LqGrAVNmL/ae0lY=
+github.com/asim/go-micro v4.2.1/go.mod h1:XTEJj5ILOBW+2ndGDG56r8fBXZ8hmsVaIaS1K5zwj+s=
+github.com/asim/go-micro v4.3.0/go.mod h1:tw47Xfg2YywfPUnglZgXQsSf7p0ST6mQL3v0JooGmSY=
+github.com/asim/go-micro v4.4.0 h1:DN/WlUwtG0yXs65oevUknlrQXfcBOaeW+WV2tzawZY4=
+github.com/asim/go-micro v4.4.0/go.mod h1:hSBUne6gtYTfYmnNxGQmaNmRQ6z8LqGrAVNmL/ae0lY=
 go.etcd.io/bbolt v1.3.2/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=
 go.etcd.io/etcd/api/v3 v3.5.0 h1:GsV3S+OfZEOCNXdtNkBSR7kgLobAa/SO6tCxRa0GAYw=
 go.etcd.io/etcd/api/v3 v3.5.0/go.mod h1:cbVKeC6lCfl7j/8jBhAK6aIYO9XOjdptoxU/nLQcPvs=

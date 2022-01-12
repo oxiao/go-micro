@@ -6,10 +6,10 @@ import (
 
 	"context"
 	example "github.com/asim/go-micro/examples/v4/server/proto/example"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/cmd"
-	"go-micro.dev/v4/metadata"
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/cmd"
+	"github.com/asim/go-micro/metadata"
+	"github.com/asim/go-micro/registry"
 )
 
 // wrapper example code

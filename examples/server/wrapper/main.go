@@ -6,8 +6,8 @@ import (
 	"context"
 	"github.com/asim/go-micro/examples/v4/server/handler"
 	"github.com/asim/go-micro/examples/v4/server/subscriber"
-	"go-micro.dev/v4/cmd"
-	"go-micro.dev/v4/server"
+	"github.com/asim/go-micro/cmd"
+	"github.com/asim/go-micro/server"
 )
 
 func logWrapper(fn server.HandlerFunc) server.HandlerFunc {

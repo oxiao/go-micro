@@ -3,8 +3,8 @@ package nacos
 import (
 	"context"
 
-	"go-micro.dev/v4/config/source"
-	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
+	"github.com/asim/go-micro/config/source"
+	"github.com/nacos-group/nacos-sdk-go/common/constant"
 )
 
 type addressKey struct{}

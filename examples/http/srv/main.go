@@ -4,10 +4,10 @@ import (
 	"log"
 
 	httpServer "github.com/asim/go-micro/plugins/server/http/v4"
-	"go-micro.dev/v4"
+	"github.com/asim/go-micro"
 
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/server"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/server"
 	"github.com/gin-gonic/gin"
 )
 

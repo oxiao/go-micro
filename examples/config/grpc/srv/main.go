@@ -11,11 +11,11 @@ import (
 
 	yaml "github.com/asim/go-micro/plugins/config/encoder/yaml/v4"
 	proto "github.com/asim/go-micro/plugins/config/source/grpc/v4/proto"
-	"go-micro.dev/v4/config"
-	"go-micro.dev/v4/config/reader"
-	"go-micro.dev/v4/config/reader/json"
-	"go-micro.dev/v4/config/source/file"
-	log "go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/config"
+	"github.com/asim/go-micro/config/reader"
+	"github.com/asim/go-micro/config/reader/json"
+	"github.com/asim/go-micro/config/source/file"
+	log "github.com/asim/go-micro/logger"
 	grpc "google.golang.org/grpc"
 )
 

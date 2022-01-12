@@ -1,6 +1,6 @@
 package registry
 
-import "go-micro.dev/v4/registry"
+import "github.com/asim/go-micro/registry"
 
 type registryServiceSummary struct {
 	Name     string   `json:"name" binding:"required"`

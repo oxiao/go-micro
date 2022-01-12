@@ -12,7 +12,7 @@ require (
 	github.com/kevinburke/ssh_config v1.1.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/xanzy/ssh-agent v0.3.1 // indirect
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
 	golang.org/x/net v0.0.0-20211020060615-d418f374d309
 	golang.org/x/sys v0.0.0-20211022215931-8e5104632af7 // indirect
@@ -45,4 +45,4 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

@@ -3,7 +3,7 @@ module github.com/asim/go-micro/plugins/wrapper/ratelimiter/uber/v4
 go 1.17
 
 require (
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 	go.uber.org/ratelimit v0.2.0
 )
 
@@ -24,4 +24,4 @@ require (
 	google.golang.org/protobuf v1.26.0 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

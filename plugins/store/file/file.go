@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/store"
+	"github.com/asim/go-micro/store"
 	bolt "go.etcd.io/bbolt"
 )
 

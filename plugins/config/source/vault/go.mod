@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/hashicorp/vault/api v1.0.4
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -43,4 +43,4 @@ require (
 	gopkg.in/square/go-jose.v2 v2.5.1 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

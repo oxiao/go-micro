@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/logger"
 	"github.com/rs/zerolog"
 )
 

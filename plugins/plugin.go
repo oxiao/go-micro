@@ -11,13 +11,13 @@ import (
 	"strings"
 	"text/template"
 
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/cmd"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/selector"
-	"go-micro.dev/v4/server"
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/broker"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/cmd"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/selector"
+	"github.com/asim/go-micro/server"
+	"github.com/asim/go-micro/transport"
 )
 
 // Plugin is a plugin loaded from a file

@@ -3,7 +3,7 @@ package redis
 import (
 	"time"
 
-	"go-micro.dev/v4/broker"
+	"github.com/asim/go-micro/broker"
 )
 
 var (

@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"time"
 
-	"go-micro.dev/v4/config/source"
-	"github.com/nacos-group/nacos-sdk-go/v2/clients"
-	"github.com/nacos-group/nacos-sdk-go/v2/clients/config_client"
-	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
-	"github.com/nacos-group/nacos-sdk-go/v2/vo"
+	"github.com/asim/go-micro/config/source"
+	"github.com/nacos-group/nacos-sdk-go/clients"
+	"github.com/nacos-group/nacos-sdk-go/clients/config_client"
+	"github.com/nacos-group/nacos-sdk-go/common/constant"
+	"github.com/nacos-group/nacos-sdk-go/vo"
 )
 
 type nacosConfigSource struct {
@@ -111,7 +111,12 @@ func (n *nacosConfigSource) Read() (*source.ChangeSet, error) {
 }
 
 func (n *nacosConfigSource) Write(set *source.ChangeSet) error {
-	return nil
+	_, err := n.confClient.PublishConfig(vo.ConfigParam{
+		DataId:n.dataId,
+		Group:n.group,
+		Content:string(set.Data),
+	})
+	return err
 }
 
 func (n *nacosConfigSource) Watch() (source.Watcher, error) {

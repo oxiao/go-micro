@@ -3,7 +3,7 @@ package cache
 import (
 	"time"
 
-	"go-micro.dev/v4/registry/cache"
+	"github.com/asim/go-micro/registry/cache"
 )
 
 // WithTTL sets the cache TTL

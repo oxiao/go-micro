@@ -9,12 +9,12 @@ import (
 	"github.com/asim/go-micro/plugins/config/encoder/toml/v4"
 	"github.com/asim/go-micro/plugins/config/encoder/yaml/v4"
 	"github.com/pkg/errors"
-	"go-micro.dev/v4/config"
-	"go-micro.dev/v4/config/reader"
-	"go-micro.dev/v4/config/reader/json"
-	"go-micro.dev/v4/config/source/env"
-	"go-micro.dev/v4/config/source/file"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/config"
+	"github.com/asim/go-micro/config/reader"
+	"github.com/asim/go-micro/config/reader/json"
+	"github.com/asim/go-micro/config/source/env"
+	"github.com/asim/go-micro/config/source/file"
+	"github.com/asim/go-micro/logger"
 )
 
 // internal instance of Config

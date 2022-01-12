@@ -3,7 +3,7 @@ package url
 import (
 	"errors"
 
-	"go-micro.dev/v4/config/source"
+	"github.com/asim/go-micro/config/source"
 )
 
 type urlWatcher struct {

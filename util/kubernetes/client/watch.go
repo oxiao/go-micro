@@ -7,7 +7,7 @@ import (
 	"errors"
 	"net/http"
 
-	"go-micro.dev/v4/util/kubernetes/api"
+	"github.com/asim/go-micro/util/kubernetes/api"
 )
 
 const (

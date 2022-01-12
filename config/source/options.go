@@ -3,9 +3,9 @@ package source
 import (
 	"context"
 
-	"go-micro.dev/v4/client"
-	"go-micro.dev/v4/config/encoder"
-	"go-micro.dev/v4/config/encoder/json"
+	"github.com/asim/go-micro/client"
+	"github.com/asim/go-micro/config/encoder"
+	"github.com/asim/go-micro/config/encoder/json"
 )
 
 type Options struct {

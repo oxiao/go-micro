@@ -9,7 +9,7 @@ import (
 
 	"github.com/asim/go-micro/plugins/registry/kubernetes/v4/client/api"
 	"github.com/asim/go-micro/plugins/registry/kubernetes/v4/client/watch"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/logger"
 )
 
 var (

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/logger"
 )
 
 // InvalidTemplateError indicates that the path template is not valid.

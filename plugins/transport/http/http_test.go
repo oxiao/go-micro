@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/transport"
 )
 
 func call(b *testing.B, c int) {

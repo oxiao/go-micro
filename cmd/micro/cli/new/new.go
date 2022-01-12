@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/urfave/cli/v2"
-	mcli "go-micro.dev/v4/cmd/micro/cli"
-	"go-micro.dev/v4/cmd/micro/generator"
-	tmpl "go-micro.dev/v4/cmd/micro/generator/template"
+	mcli "github.com/asim/go-micro/cmd/micro/cli"
+	"github.com/asim/go-micro/cmd/micro/generator"
+	tmpl "github.com/asim/go-micro/cmd/micro/generator/template"
 )
 
 var flags []cli.Flag = []cli.Flag{
@@ -181,7 +181,7 @@ func protoComments(name, dir string) []string {
 		"\ndownload protobuf for go-micro:",
 		"\ngo get -u google.golang.org/protobuf/proto",
 		"go install github.com/golang/protobuf/protoc-gen-go@latest",
-		"go install go-micro.dev/v4/cmd/protoc-gen-micro@v4",
+		"go install github.com/asim/go-micro/cmd/protoc-gen-micro@v4",
 		"\ncompile the proto file " + name + ".proto and install dependencies:",
 		"\ncd " + dir,
 		"make proto update tidy",

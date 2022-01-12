@@ -2,8 +2,8 @@ package http
 
 import (
 	"fmt"
-	"go-micro.dev/v4/api/server"
-	"go-micro.dev/v4/api/server/cors"
+	"github.com/asim/go-micro/api/server"
+	"github.com/asim/go-micro/api/server/cors"
 	"io"
 	"net/http"
 	"testing"

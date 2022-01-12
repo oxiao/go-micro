@@ -3,9 +3,9 @@ package grpc
 import (
 	"runtime/debug"
 
-	"go-micro.dev/v4/errors"
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/errors"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/transport"
 	pb "github.com/asim/go-micro/plugins/transport/grpc/v4/proto"
 	"google.golang.org/grpc/peer"
 )

@@ -15,15 +15,15 @@ import (
 
 	proto "github.com/asim/go-micro/plugins/broker/grpc/v4/proto"
 	"github.com/google/uuid"
-	"go-micro.dev/v4/broker"
-	"go-micro.dev/v4/cmd"
-	merr "go-micro.dev/v4/errors"
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
-	"go-micro.dev/v4/registry/cache"
-	maddr "go-micro.dev/v4/util/addr"
-	mnet "go-micro.dev/v4/util/net"
-	mls "go-micro.dev/v4/util/tls"
+	"github.com/asim/go-micro/broker"
+	"github.com/asim/go-micro/cmd"
+	merr "github.com/asim/go-micro/errors"
+	log "github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/registry"
+	"github.com/asim/go-micro/registry/cache"
+	maddr "github.com/asim/go-micro/util/addr"
+	mnet "github.com/asim/go-micro/util/net"
+	mls "github.com/asim/go-micro/util/tls"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )
@@ -62,7 +62,7 @@ type grpcEvent struct {
 }
 
 var (
-	registryKey = "go-micro.dev/v4/registry"
+	registryKey = "github.com/asim/go-micro/registry"
 
 	broadcastVersion = "ff.grpc.broadcast"
 	registerTTL      = time.Minute

@@ -534,8 +534,8 @@ github.com/xeipuuv/gojsonschema v1.2.0/go.mod h1:anYRn/JVcOK2ZgGU+IjEV4nwlhoK5sQ
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
-go-micro.dev/v4 v4.3.1-0.20211108085239-0c2041e43908 h1:4ori3xawGl2unFIOQPEgUuHdlrvihc+dsIot7XUzc2k=
-go-micro.dev/v4 v4.3.1-0.20211108085239-0c2041e43908/go.mod h1:tw47Xfg2YywfPUnglZgXQsSf7p0ST6mQL3v0JooGmSY=
+github.com/asim/go-micro v4.3.1-0.20211108085239-0c2041e43908 h1:4ori3xawGl2unFIOQPEgUuHdlrvihc+dsIot7XUzc2k=
+github.com/asim/go-micro v4.3.1-0.20211108085239-0c2041e43908/go.mod h1:tw47Xfg2YywfPUnglZgXQsSf7p0ST6mQL3v0JooGmSY=
 go.etcd.io/bbolt v1.3.2/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=
 go.etcd.io/bbolt v1.3.6 h1:/ecaJf0sk1l4l6V4awd65v2C3ILy7MSj+s/x1ADCIMU=
 go.etcd.io/bbolt v1.3.6/go.mod h1:qXsaaIqmgQH0T+OPdb99Bf+PKfBBQVAdyD6TY9G8XM4=

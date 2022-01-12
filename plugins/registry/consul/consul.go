@@ -12,9 +12,9 @@ import (
 	"time"
 
 	consul "github.com/hashicorp/consul/api"
-	"go-micro.dev/v4/cmd"
-	"go-micro.dev/v4/registry"
-	mnet "go-micro.dev/v4/util/net"
+	"github.com/asim/go-micro/cmd"
+	"github.com/asim/go-micro/registry"
+	mnet "github.com/asim/go-micro/util/net"
 	hash "github.com/mitchellh/hashstructure"
 )
 
@@ -191,7 +191,7 @@ func (c *consulRegistry) Register(s *registry.Service, opts ...registry.Register
 	}
 
 	// create hash of service; uint64
-	h, err := hash.Hash(s, nil)
+	h, err := hash.Hash(s, hash.FormatV1, nil)
 	if err != nil {
 		return err
 	}

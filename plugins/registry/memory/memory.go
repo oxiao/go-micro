@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/registry"
 	"github.com/google/uuid"
 )
 

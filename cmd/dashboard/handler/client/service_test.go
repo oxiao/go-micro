@@ -3,7 +3,7 @@ package client
 import (
 	"testing"
 
-	"go-micro.dev/v4/client"
+	"github.com/asim/go-micro/client"
 )
 
 func TestGetClient(t *testing.T) {

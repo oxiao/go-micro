@@ -7,7 +7,7 @@ require (
 	github.com/google/uuid v1.2.0
 	github.com/hashicorp/memberlist v0.1.5
 	github.com/mitchellh/hashstructure v1.1.0
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -57,4 +57,4 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

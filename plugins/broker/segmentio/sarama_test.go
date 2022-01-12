@@ -8,7 +8,7 @@ import (
 
 	sarama "github.com/asim/go-micro/plugins/broker/kafka/v4"
 	segjson "github.com/asim/go-micro/plugins/codec/segmentio/v4"
-	"go-micro.dev/v4/broker"
+	"github.com/asim/go-micro/broker"
 )
 
 func BenchmarkSaramaCodecJsonPublish(b *testing.B) {

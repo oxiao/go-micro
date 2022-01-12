@@ -8,8 +8,8 @@ import (
 
 	pb "github.com/asim/go-micro/examples/v4/stream/grpc/proto"
 	"github.com/asim/go-micro/plugins/client/grpc/v4"
-	"go-micro.dev/v4"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro"
+	"github.com/asim/go-micro/logger"
 )
 
 func main() {

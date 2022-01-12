@@ -1,16 +1,16 @@
 package main
 
 import (
-	"go-micro.dev/v4/cmd/micro/cli"
+	"github.com/asim/go-micro/cmd/micro/cli"
 
 	// register commands
-	_ "go-micro.dev/v4/cmd/micro/cli/call"
-	_ "go-micro.dev/v4/cmd/micro/cli/describe"
-	_ "go-micro.dev/v4/cmd/micro/cli/generate"
-	_ "go-micro.dev/v4/cmd/micro/cli/new"
-	_ "go-micro.dev/v4/cmd/micro/cli/run"
-	_ "go-micro.dev/v4/cmd/micro/cli/services"
-	_ "go-micro.dev/v4/cmd/micro/cli/stream"
+	_ "github.com/asim/go-micro/cmd/micro/cli/call"
+	_ "github.com/asim/go-micro/cmd/micro/cli/describe"
+	_ "github.com/asim/go-micro/cmd/micro/cli/generate"
+	_ "github.com/asim/go-micro/cmd/micro/cli/new"
+	_ "github.com/asim/go-micro/cmd/micro/cli/run"
+	_ "github.com/asim/go-micro/cmd/micro/cli/services"
+	_ "github.com/asim/go-micro/cmd/micro/cli/stream"
 )
 
 func main() {

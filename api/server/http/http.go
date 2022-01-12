@@ -9,9 +9,9 @@ import (
 	"sync"
 
 	"github.com/gorilla/handlers"
-	"go-micro.dev/v4/api/server"
-	"go-micro.dev/v4/api/server/cors"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/api/server"
+	"github.com/asim/go-micro/api/server/cors"
+	"github.com/asim/go-micro/logger"
 )
 
 type httpServer struct {

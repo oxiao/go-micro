@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	"go-micro.dev/v4/client"
+	"github.com/asim/go-micro/client"
 )
 
 type grpcEvent struct {

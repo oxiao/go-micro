@@ -4,7 +4,7 @@ import (
 	"context"
 
 	proto "github.com/asim/go-micro/examples/v4/function/proto"
-	"go-micro.dev/v4"
+	"github.com/asim/go-micro"
 )
 
 type Greeter struct{}

@@ -1,5 +1,5 @@
 // Package log is a global internal logger
-// DEPRECATED: this is frozen package, use go-micro.dev/v4/logger
+// DEPRECATED: this is frozen package, use github.com/asim/go-micro/logger
 package log
 
 import (
@@ -7,8 +7,8 @@ import (
 	"os"
 	"sync/atomic"
 
-	dlog "go-micro.dev/v4/debug/log"
-	nlog "go-micro.dev/v4/logger"
+	dlog "github.com/asim/go-micro/debug/log"
+	nlog "github.com/asim/go-micro/logger"
 )
 
 // level is a log level

@@ -3,7 +3,7 @@ package box
 
 import (
 	"github.com/pkg/errors"
-	"go-micro.dev/v4/config/secrets"
+	"github.com/asim/go-micro/config/secrets"
 	naclbox "golang.org/x/crypto/nacl/box"
 
 	"crypto/rand"

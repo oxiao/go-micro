@@ -3,7 +3,7 @@ module github.com/asim/go-micro/plugins/config/source/configmap/v4
 go 1.17
 
 require (
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 	k8s.io/api v0.22.2
 	k8s.io/apimachinery v0.22.2
 	k8s.io/client-go v0.22.2
@@ -47,4 +47,4 @@ require (
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

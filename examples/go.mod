@@ -13,7 +13,7 @@ replace (
 	github.com/asim/go-micro/plugins/transport/grpc/v4 => ../plugins/transport/grpc
 	github.com/asim/go-micro/plugins/wrapper/select/roundrobin/v4 => ../plugins/wrapper/select/roundrobin
 	github.com/asim/go-micro/plugins/wrapper/select/shard/v4 => ../plugins/wrapper/select/shard
-	go-micro.dev/v4 => ../../go-micro
+	github.com/asim/go-micro => ../../go-micro
 )
 
 require (
@@ -32,7 +32,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/pborman/uuid v1.2.1
 	github.com/urfave/cli/v2 v2.3.0
-	go-micro.dev/v4 v4.3.0
+	github.com/asim/go-micro v4.3.0
 	golang.org/x/net v0.0.0-20211020060615-d418f374d309
 	google.golang.org/genproto v0.0.0-20211021150943-2b146023228c
 	google.golang.org/grpc v1.42.0

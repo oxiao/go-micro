@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	log "go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
+	log "github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/registry"
 	"github.com/asim/go-micro/plugins/registry/nats/v4"
 )
 

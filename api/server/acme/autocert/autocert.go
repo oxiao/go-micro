@@ -7,8 +7,8 @@ import (
 	"net"
 	"os"
 
-	"go-micro.dev/v4/api/server/acme"
-	"go-micro.dev/v4/logger"
+	"github.com/asim/go-micro/api/server/acme"
+	"github.com/asim/go-micro/logger"
 	"golang.org/x/crypto/acme/autocert"
 )
 

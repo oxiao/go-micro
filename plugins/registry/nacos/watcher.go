@@ -7,10 +7,10 @@ import (
 	"reflect"
 	"sync"
 
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/registry"
-	"github.com/nacos-group/nacos-sdk-go/v2/model"
-	"github.com/nacos-group/nacos-sdk-go/v2/vo"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/registry"
+	"github.com/nacos-group/nacos-sdk-go/model"
+	"github.com/nacos-group/nacos-sdk-go/vo"
 )
 
 type watcher struct {
@@ -22,7 +22,7 @@ type watcher struct {
 
 	sync.RWMutex
 	services      map[string][]*registry.Service
-	cacheServices map[string][]model.Instance
+	cacheServices map[string][]model.SubscribeService
 	param         *vo.SubscribeParam
 	Doms          []string
 }
@@ -38,7 +38,7 @@ func newWatcher(nr *nacosRegistry, opts ...registry.WatchOption) (registry.Watch
 		exit:          make(chan bool),
 		next:          make(chan *registry.Result, 10),
 		services:      make(map[string][]*registry.Service),
-		cacheServices: make(map[string][]model.Instance),
+		cacheServices: make(map[string][]model.SubscribeService),
 		param:         new(vo.SubscribeParam),
 		Doms:          make([]string, 0),
 	}
@@ -76,7 +76,7 @@ func newWatcher(nr *nacosRegistry, opts ...registry.WatchOption) (registry.Watch
 	return &nw, nil
 }
 
-func (nw *watcher) callBackHandle(services []model.Instance, err error) {
+func (nw *watcher) callBackHandle(services []model.SubscribeService, err error) {
 	if err != nil {
 		logger.Error("nacos watcher call back handle error:%v", err)
 		return
@@ -131,7 +131,7 @@ func (nw *watcher) callBackHandle(services []model.Instance, err error) {
 				nw.next <- &registry.Result{Action: "delete", Service: buildRegistryService(&cacheService)}
 
 				nw.Lock()
-				nw.cacheServices[serviceName][index] = model.Instance{}
+				nw.cacheServices[serviceName][index] = model.SubscribeService{}
 				nw.Unlock()
 
 				return
@@ -141,7 +141,7 @@ func (nw *watcher) callBackHandle(services []model.Instance, err error) {
 
 }
 
-func buildRegistryService(v *model.Instance) (s *registry.Service) {
+func buildRegistryService(v *model.SubscribeService) (s *registry.Service) {
 	nodes := make([]*registry.Node, 0)
 	nodes = append(nodes, &registry.Node{
 		Id:       v.InstanceId,

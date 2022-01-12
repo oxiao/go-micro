@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/urfave/cli/v2"
-	"go-micro.dev/v4"
-	"go-micro.dev/v4/client"
-	mcli "go-micro.dev/v4/cmd/micro/cli"
+	"github.com/asim/go-micro"
+	"github.com/asim/go-micro/client"
+	mcli "github.com/asim/go-micro/cmd/micro/cli"
 )
 
 func init() {

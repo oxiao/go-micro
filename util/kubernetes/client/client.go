@@ -12,8 +12,8 @@ import (
 	"regexp"
 	"strings"
 
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/util/kubernetes/api"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/util/kubernetes/api"
 )
 
 var (

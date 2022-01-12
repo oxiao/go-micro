@@ -1,7 +1,7 @@
 package selector
 
 import (
-	"go-micro.dev/v4/registry"
+	"github.com/asim/go-micro/registry"
 )
 
 // FilterEndpoint is an endpoint based Select Filter which will

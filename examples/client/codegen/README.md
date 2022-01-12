@@ -133,7 +133,7 @@ import (
 	"fmt"
 
 	"context"
-	"go-micro.dev/v4/client"
+	"github.com/asim/go-micro/client"
 	hello "path/to/hello/proto"
 )
 

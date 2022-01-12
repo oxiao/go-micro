@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/VictoriaMetrics/metrics v1.17.2
 	github.com/stretchr/testify v1.7.0
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -31,4 +31,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../../go-micro
+replace github.com/asim/go-micro => ../../../../../go-micro

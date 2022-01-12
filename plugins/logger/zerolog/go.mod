@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/rs/zerolog v1.23.0
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 )
 
 require (
@@ -12,4 +12,4 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

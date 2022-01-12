@@ -8,8 +8,8 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/store"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/store"
 )
 
 // NewStream returns an initialized memory stream

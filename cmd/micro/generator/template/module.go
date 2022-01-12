@@ -6,7 +6,7 @@ var Module = `module {{.Vendor}}{{.Service}}{{if .Client}}-client{{end}}
 go 1.16
 
 require (
-	go-micro.dev/v4 v4.1.0
+	github.com/asim/go-micro v4.1.0
 )
 
 // This can be removed once etcd becomes go gettable, version 3.4 and 3.5 is not,

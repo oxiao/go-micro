@@ -4,11 +4,11 @@ import (
 	"context"
 	"crypto/tls"
 	"encoding/gob"
-	"go-micro.dev/v4/cmd"
+	"github.com/asim/go-micro/cmd"
 	"time"
 
-	"go-micro.dev/v4/transport"
-	utls "go-micro.dev/v4/util/tls"
+	"github.com/asim/go-micro/transport"
+	utls "github.com/asim/go-micro/util/tls"
 	quic "github.com/lucas-clemente/quic-go"
 )
 

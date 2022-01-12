@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/mitchellh/hashstructure v1.1.0
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 	go.etcd.io/etcd/api/v3 v3.5.0
 	go.etcd.io/etcd/client/v3 v3.5.0
 	go.uber.org/zap v1.17.0
@@ -56,4 +56,4 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro

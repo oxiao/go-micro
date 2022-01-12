@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"go-micro.dev/v4/logger"
-	"go-micro.dev/v4/store"
+	"github.com/asim/go-micro/logger"
+	"github.com/asim/go-micro/store"
 )
 
 const joinKey = "/"

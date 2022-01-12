@@ -1,8 +1,8 @@
 package client
 
 import (
-	"go-micro.dev/v4/codec"
-	"go-micro.dev/v4/transport"
+	"github.com/asim/go-micro/codec"
+	"github.com/asim/go-micro/transport"
 )
 
 type rpcResponse struct {

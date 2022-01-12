@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/golang/protobuf v1.5.2
-	go-micro.dev/v4 v4.2.1
+	github.com/asim/go-micro v4.2.1
 	google.golang.org/grpc v1.38.0
 )
 
@@ -47,4 +47,4 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
 
-replace go-micro.dev/v4 => ../../../../go-micro
+replace github.com/asim/go-micro => ../../../../go-micro
