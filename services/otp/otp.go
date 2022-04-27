@@ -1,8 +1,13 @@
 package otp
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Otp interface {
+	Generate(*GenerateRequest) (*GenerateResponse, error)
+	Validate(*ValidateRequest) (*ValidateResponse, error)
+}
 
 func NewOtpService(token string) *OtpService {
 	return &OtpService{
@@ -18,14 +23,18 @@ type OtpService struct {
 
 // Generate an OTP (one time pass) code
 func (t *OtpService) Generate(request *GenerateRequest) (*GenerateResponse, error) {
+
 	rsp := &GenerateResponse{}
 	return rsp, t.client.Call("otp", "Generate", request, rsp)
+
 }
 
 // Validate the OTP code
 func (t *OtpService) Validate(request *ValidateRequest) (*ValidateResponse, error) {
+
 	rsp := &ValidateResponse{}
 	return rsp, t.client.Call("otp", "Validate", request, rsp)
+
 }
 
 type GenerateRequest struct {

@@ -1,8 +1,14 @@
 package location
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Location interface {
+	Read(*ReadRequest) (*ReadResponse, error)
+	Save(*SaveRequest) (*SaveResponse, error)
+	Search(*SearchRequest) (*SearchResponse, error)
+}
 
 func NewLocationService(token string) *LocationService {
 	return &LocationService{
@@ -18,20 +24,26 @@ type LocationService struct {
 
 // Read an entity by its ID
 func (t *LocationService) Read(request *ReadRequest) (*ReadResponse, error) {
+
 	rsp := &ReadResponse{}
 	return rsp, t.client.Call("location", "Read", request, rsp)
+
 }
 
 // Save an entity's current position
 func (t *LocationService) Save(request *SaveRequest) (*SaveResponse, error) {
+
 	rsp := &SaveResponse{}
 	return rsp, t.client.Call("location", "Save", request, rsp)
+
 }
 
 // Search for entities in a given radius
 func (t *LocationService) Search(request *SearchRequest) (*SearchResponse, error) {
+
 	rsp := &SearchResponse{}
 	return rsp, t.client.Call("location", "Search", request, rsp)
+
 }
 
 type Entity struct {

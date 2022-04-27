@@ -1,8 +1,15 @@
 package file
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type File interface {
+	Delete(*DeleteRequest) (*DeleteResponse, error)
+	List(*ListRequest) (*ListResponse, error)
+	Read(*ReadRequest) (*ReadResponse, error)
+	Save(*SaveRequest) (*SaveResponse, error)
+}
 
 func NewFileService(token string) *FileService {
 	return &FileService{
@@ -18,33 +25,34 @@ type FileService struct {
 
 // Delete a file by project name/path
 func (t *FileService) Delete(request *DeleteRequest) (*DeleteResponse, error) {
+
 	rsp := &DeleteResponse{}
 	return rsp, t.client.Call("file", "Delete", request, rsp)
+
 }
 
 // List files by their project and optionally a path.
 func (t *FileService) List(request *ListRequest) (*ListResponse, error) {
+
 	rsp := &ListResponse{}
 	return rsp, t.client.Call("file", "List", request, rsp)
+
 }
 
 // Read a file by path
 func (t *FileService) Read(request *ReadRequest) (*ReadResponse, error) {
+
 	rsp := &ReadResponse{}
 	return rsp, t.client.Call("file", "Read", request, rsp)
+
 }
 
 // Save a file
 func (t *FileService) Save(request *SaveRequest) (*SaveResponse, error) {
+
 	rsp := &SaveResponse{}
 	return rsp, t.client.Call("file", "Save", request, rsp)
-}
 
-type BatchSaveRequest struct {
-	Files []Record `json:"files"`
-}
-
-type BatchSaveResponse struct {
 }
 
 type DeleteRequest struct {

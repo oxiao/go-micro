@@ -1,8 +1,12 @@
 package answer
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Answer interface {
+	Question(*QuestionRequest) (*QuestionResponse, error)
+}
 
 func NewAnswerService(token string) *AnswerService {
 	return &AnswerService{
@@ -18,8 +22,10 @@ type AnswerService struct {
 
 // Ask a question and receive an instant answer
 func (t *AnswerService) Question(request *QuestionRequest) (*QuestionResponse, error) {
+
 	rsp := &QuestionResponse{}
 	return rsp, t.client.Call("answer", "Question", request, rsp)
+
 }
 
 type QuestionRequest struct {

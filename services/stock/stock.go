@@ -1,8 +1,15 @@
 package stock
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Stock interface {
+	History(*HistoryRequest) (*HistoryResponse, error)
+	OrderBook(*OrderBookRequest) (*OrderBookResponse, error)
+	Price(*PriceRequest) (*PriceResponse, error)
+	Quote(*QuoteRequest) (*QuoteResponse, error)
+}
 
 func NewStockService(token string) *StockService {
 	return &StockService{
@@ -18,26 +25,34 @@ type StockService struct {
 
 // Get the historic open-close for a given day
 func (t *StockService) History(request *HistoryRequest) (*HistoryResponse, error) {
+
 	rsp := &HistoryResponse{}
 	return rsp, t.client.Call("stock", "History", request, rsp)
+
 }
 
 // Get the historic order book and each trade by timestamp
 func (t *StockService) OrderBook(request *OrderBookRequest) (*OrderBookResponse, error) {
+
 	rsp := &OrderBookResponse{}
 	return rsp, t.client.Call("stock", "OrderBook", request, rsp)
+
 }
 
 // Get the last price for a given stock ticker
 func (t *StockService) Price(request *PriceRequest) (*PriceResponse, error) {
+
 	rsp := &PriceResponse{}
 	return rsp, t.client.Call("stock", "Price", request, rsp)
+
 }
 
 // Get the last quote for the stock
 func (t *StockService) Quote(request *QuoteRequest) (*QuoteResponse, error) {
+
 	rsp := &QuoteResponse{}
 	return rsp, t.client.Call("stock", "Quote", request, rsp)
+
 }
 
 type HistoryRequest struct {
@@ -66,13 +81,13 @@ type HistoryResponse struct {
 
 type Order struct {
 	// the asking price
-	AskPrice float64 `json:"askPrice"`
+	AskPrice float64 `json:"ask_price"`
 	// the ask size
-	AskSize int32 `json:"askSize"`
+	AskSize int32 `json:"ask_size"`
 	// the bidding price
-	BidPrice float64 `json:"bidPrice"`
+	BidPrice float64 `json:"bid_price"`
 	// the bid size
-	BidSize int32 `json:"bidSize"`
+	BidSize int32 `json:"bid_size"`
 	// the UTC timestamp of the quote
 	Timestamp string `json:"timestamp"`
 }
@@ -118,13 +133,13 @@ type QuoteRequest struct {
 
 type QuoteResponse struct {
 	// the asking price
-	AskPrice float64 `json:"askPrice"`
+	AskPrice float64 `json:"ask_price"`
 	// the ask size
-	AskSize int32 `json:"askSize"`
+	AskSize int32 `json:"ask_size"`
 	// the bidding price
-	BidPrice float64 `json:"bidPrice"`
+	BidPrice float64 `json:"bid_price"`
 	// the bid size
-	BidSize int32 `json:"bidSize"`
+	BidSize int32 `json:"bid_size"`
 	// the stock symbol
 	Symbol string `json:"symbol"`
 	// the UTC timestamp of the quote

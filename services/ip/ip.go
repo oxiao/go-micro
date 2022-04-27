@@ -1,8 +1,12 @@
 package ip
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Ip interface {
+	Lookup(*LookupRequest) (*LookupResponse, error)
+}
 
 func NewIpService(token string) *IpService {
 	return &IpService{
@@ -18,8 +22,10 @@ type IpService struct {
 
 // Lookup the geolocation information for an IP address
 func (t *IpService) Lookup(request *LookupRequest) (*LookupResponse, error) {
+
 	rsp := &LookupResponse{}
 	return rsp, t.client.Call("ip", "Lookup", request, rsp)
+
 }
 
 type LookupRequest struct {

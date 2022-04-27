@@ -1,8 +1,12 @@
 package qr
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Qr interface {
+	Generate(*GenerateRequest) (*GenerateResponse, error)
+}
 
 func NewQrService(token string) *QrService {
 	return &QrService{
@@ -18,8 +22,10 @@ type QrService struct {
 
 // Generate a QR code with a specific text and size
 func (t *QrService) Generate(request *GenerateRequest) (*GenerateResponse, error) {
+
 	rsp := &GenerateResponse{}
 	return rsp, t.client.Call("qr", "Generate", request, rsp)
+
 }
 
 type GenerateRequest struct {

@@ -1,8 +1,12 @@
 package sentiment
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Sentiment interface {
+	Analyze(*AnalyzeRequest) (*AnalyzeResponse, error)
+}
 
 func NewSentimentService(token string) *SentimentService {
 	return &SentimentService{
@@ -18,8 +22,10 @@ type SentimentService struct {
 
 // Analyze and score a piece of text
 func (t *SentimentService) Analyze(request *AnalyzeRequest) (*AnalyzeResponse, error) {
+
 	rsp := &AnalyzeResponse{}
 	return rsp, t.client.Call("sentiment", "Analyze", request, rsp)
+
 }
 
 type AnalyzeRequest struct {

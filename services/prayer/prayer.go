@@ -1,8 +1,12 @@
 package prayer
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Prayer interface {
+	Times(*TimesRequest) (*TimesResponse, error)
+}
 
 func NewPrayerService(token string) *PrayerService {
 	return &PrayerService{
@@ -18,8 +22,10 @@ type PrayerService struct {
 
 // Get the prayer (salah) times for a location on a given date
 func (t *PrayerService) Times(request *TimesRequest) (*TimesResponse, error) {
+
 	rsp := &TimesResponse{}
 	return rsp, t.client.Call("prayer", "Times", request, rsp)
+
 }
 
 type PrayerTime struct {

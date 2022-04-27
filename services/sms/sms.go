@@ -1,8 +1,12 @@
 package sms
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Sms interface {
+	Send(*SendRequest) (*SendResponse, error)
+}
 
 func NewSmsService(token string) *SmsService {
 	return &SmsService{
@@ -18,8 +22,10 @@ type SmsService struct {
 
 // Send an SMS.
 func (t *SmsService) Send(request *SendRequest) (*SendResponse, error) {
+
 	rsp := &SendResponse{}
 	return rsp, t.client.Call("sms", "Send", request, rsp)
+
 }
 
 type SendRequest struct {

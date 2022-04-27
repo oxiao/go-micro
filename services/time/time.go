@@ -1,8 +1,13 @@
 package time
 
 import (
-	"go.m3o.com/client"
+	"go-micro.dev/v4/api/client"
 )
+
+type Time interface {
+	Now(*NowRequest) (*NowResponse, error)
+	Zone(*ZoneRequest) (*ZoneResponse, error)
+}
 
 func NewTimeService(token string) *TimeService {
 	return &TimeService{
@@ -18,14 +23,18 @@ type TimeService struct {
 
 // Get the current time
 func (t *TimeService) Now(request *NowRequest) (*NowResponse, error) {
+
 	rsp := &NowResponse{}
 	return rsp, t.client.Call("time", "Now", request, rsp)
+
 }
 
 // Get the timezone info for a specific location
 func (t *TimeService) Zone(request *ZoneRequest) (*ZoneResponse, error) {
+
 	rsp := &ZoneResponse{}
 	return rsp, t.client.Call("time", "Zone", request, rsp)
+
 }
 
 type NowRequest struct {
