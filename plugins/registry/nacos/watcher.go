@@ -83,7 +83,13 @@ func (nw *watcher) callBackHandle(services []model.SubscribeService, err error) 
 	}
 	serviceName := services[0].ServiceName
 
-	if nw.cacheServices[serviceName] == nil {
+	// FIX: concurrent map read and map write
+	nw.Lock()
+	b := nw.cacheServices[serviceName] == nil
+	nw.Unlock()
+
+	//if nw.cacheServices[serviceName] == nil {
+	if b {
 
 		nw.Lock()
 		nw.cacheServices[serviceName] = services

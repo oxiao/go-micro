@@ -406,7 +406,7 @@ func (r *registryRouter) Endpoint(req *http.Request) (*api.Service, error) {
 	}
 
 	// no match
-	return nil, errors.New("not found")
+	return nil, errors.New("registry.Endpoint not found!" + req.URL.RawPath)
 }
 
 func (r *registryRouter) Route(req *http.Request) (*api.Service, error) {

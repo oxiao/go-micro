@@ -11,7 +11,7 @@ require (
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/fsouza/go-dockerclient v1.7.3
 	github.com/go-acme/lego/v4 v4.4.0
-	github.com/go-git/go-git/v5 v5.4.2
+	github.com/go-git/go-git v5.4.2
 	github.com/gobwas/httphead v0.1.0
 	github.com/gobwas/pool v0.2.1 // indirect
 	github.com/gobwas/ws v1.0.4
