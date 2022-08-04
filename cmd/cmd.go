@@ -238,6 +238,21 @@ var (
 			EnvVars: []string{"MICRO_CONFIG"},
 			Usage:   "The source of the config to be used to get configuration",
 		},
+		// added by yaogl. 20220804
+		&cli.StringFlag{
+			Name:    "group_name",
+			Usage:   "default is release, you can use debug or yourself defines. For up-bin only.",
+			Value:   "release",
+			EnvVars: []string{"UP_GROUP_NAME"},
+		},
+		// added by yaogl. 20220804
+		&cli.StringFlag{
+			Name:    "external_address",
+			Usage:   "default is empty, you can specify a ip:port to instead of server_address in some situations. For up-bin only.",
+			Value:   "",
+			EnvVars: []string{"UP_EXTERNAL_ADDRESS"},
+		},
+
 	}
 
 	DefaultBrokers = map[string]func(...broker.Option) broker.Broker{}
